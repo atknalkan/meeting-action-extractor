@@ -1,0 +1,15 @@
+Weekly sync, v2 launch. Present: Alice (PM), Bob (backend), Carol (QA).
+
+Alice: Okay, first thing. Are we still good for the December 1st launch?
+Bob: From the backend side, yes, if nothing new comes up.
+Carol: QA is on track too. One open issue: users get logged out after five minutes on mobile.
+Alice: Then let's confirm it, the v2 launch stays on December 1st.
+Carol: Bob, can you take the login timeout bug before launch? It's blocking the mobile sign-off.
+Bob: Yes, I'll fix it this week.
+Alice: Great. I'll send the updated checklist by Friday so everyone knows what's left.
+Carol: Should we also redo the onboarding screens?
+Alice: No, we decided last week to keep them for v2. Let's not reopen that.
+Bob: Someone should probably write the launch blog post at some point. Nice to have, not urgent.
+Alice: Agreed, let's park it until someone has time.
+Carol: I'll run the full regression suite on Monday after Bob's fix lands.
+Alice: Perfect. That's it, thanks everyone.

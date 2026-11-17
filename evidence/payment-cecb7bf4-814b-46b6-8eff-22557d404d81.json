@@ -1,0 +1,76 @@
+{
+  "paidAt": "2026-11-17T11:25:51.672Z",
+  "finishedAt": "2026-11-17T11:27:14.903Z",
+  "payer": "GBMC37IPXEPO36DXH6TVNSFVNUAR5CGW5J2JWNFCBJVZHOEJWYPSG3IY",
+  "manifestUrl": "https://meeting-actions.92-5-73-99.sslip.io/.well-known/stellar-agent-services.json",
+  "input": {
+    "transcript": "Weekly sync, v2 launch. Present: Alice (PM), Bob (backend), Carol (QA).\n\nAlice: Okay, first thing. Are we still good for the December 1st launch?\nBob: From the backend side, yes, if nothing new comes up.\nCarol: QA is on track too. One open issue: users get logged out after five minutes on mobile.\nAlice: Then let's confirm it, the v2 launch stays on December 1st.\nCarol: Bob, can you take the login timeout bug before launch? It's blocking the mobile sign-off.\nBob: Yes, I'll fix it this week.\nAlice: Great. I'll send the updated checklist by Friday so everyone knows what's left.\nCarol: Should we also redo the onboarding screens?\nAlice: No, we decided last week to keep them for v2. Let's not reopen that.\nBob: Someone should probably write the launch blog post at some point. Nice to have, not urgent.\nAlice: Agreed, let's park it until someone has time.\nCarol: I'll run the full regression suite on Monday after Bob's fix lands.\nAlice: Perfect. That's it, thanks everyone.\n",
+    "meetingDate": "2026-11-17"
+  },
+  "terms": {
+    "provider": "Meeting Action Extractor",
+    "agentId": 77,
+    "service": "meeting-actions",
+    "charge": "on-success",
+    "amountBaseUnits": "100000",
+    "asset": "CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75",
+    "payTo": "GDZ2Z5TMBSI3EBBMMYXAXXNVHN4THI6VTIEVBHMBAJ7TPJGTRACQZFW6",
+    "network": "stellar:pubnet",
+    "jobId": "cecb7bf4-814b-46b6-8eff-22557d404d81"
+  },
+  "confirmedOnChain": true,
+  "unconfirmedReason": null,
+  "job": {
+    "jobId": "cecb7bf4-814b-46b6-8eff-22557d404d81",
+    "service": "meeting-actions",
+    "status": "succeeded",
+    "charge": "on-success",
+    "charged": true,
+    "createdAt": "2026-11-17T11:26:01.395Z",
+    "updatedAt": "2026-11-17T11:27:11.888Z",
+    "expiresAt": "2026-11-18T11:27:11.888Z",
+    "output": {
+      "summary": "The team confirmed the v2 launch date for December 1st and assigned tasks to address a mobile login bug and update the project checklist.",
+      "actionItems": [
+        {
+          "task": "Fix the mobile login timeout bug",
+          "owner": "Bob",
+          "dueDate": null,
+          "dueText": "this week",
+          "priority": "high",
+          "evidence": "Carol: Bob, can you take the login timeout bug before launch? It's blocking the mobile sign-off. Bob: Yes, I'll fix it this week."
+        },
+        {
+          "task": "Send the updated launch checklist",
+          "owner": "Alice",
+          "dueDate": "2026-11-20",
+          "dueText": "by Friday",
+          "priority": "medium",
+          "evidence": null
+        },
+        {
+          "task": "Run the full regression suite",
+          "owner": "Carol",
+          "dueDate": "2026-11-23",
+          "dueText": "on Monday",
+          "priority": "high",
+          "evidence": "Carol: I'll run the full regression suite on Monday after Bob's fix lands."
+        }
+      ],
+      "decisions": [
+        "The v2 launch date is confirmed for December 1st.",
+        "The onboarding screens will remain as they are for the v2 launch.",
+        "Writing the launch blog post is deferred until someone has available time."
+      ]
+    },
+    "payment": {
+      "network": "stellar:pubnet",
+      "asset": "CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75",
+      "amount": "100000",
+      "payTo": "GDZ2Z5TMBSI3EBBMMYXAXXNVHN4THI6VTIEVBHMBAJ7TPJGTRACQZFW6",
+      "payer": "GBMC37IPXEPO36DXH6TVNSFVNUAR5CGW5J2JWNFCBJVZHOEJWYPSG3IY",
+      "transaction": "a3bddc48cf8ef9b18dae8a77b1f84559488ed12d47454dd2c52290609f3e58f9",
+      "settledAt": "2026-11-17T11:27:11.887Z"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+# systemd unit for the Meeting Action Extractor on the Oracle VM. Installed by install.sh.
+[Unit]
+Description=Meeting Action Extractor (Stellar paid agent service)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=meeting-actions
+Group=meeting-actions
+WorkingDirectory=/opt/meeting-actions/current
+EnvironmentFile=/etc/meeting-actions/env
+Environment=DATA_DIR=/var/lib/meeting-actions HOST=127.0.0.1 NODE_ENV=production
+ExecStart=/usr/bin/env node --disable-warning=ExperimentalWarning dist/server.js
+Restart=always
+RestartSec=5
+MemoryMax=384M
+CPUQuota=50%
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/meeting-actions
+
+[Install]
+WantedBy=multi-user.target
